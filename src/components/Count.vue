@@ -19,9 +19,11 @@ watch(valeur,function(newValeur){
 
 <template>
     <div class="count">
-        <MyButton :title="'+'" @click ="valeur++"/>
+        <!-- <MyButton :title="'+'" @click ="valeur++"/> -->
+        <MyButton @click ="valeur++">+</MyButton>
         {{ valeur }}
-        <MyButton :title="'-'" @click ="valeur--"/>
+        <!-- <MyButton :title="'-'" @click ="valeur--"/> -->
+        <MyButton @click ="valeur--">-</MyButton>
     </div>
 </template>
 

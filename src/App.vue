@@ -16,7 +16,9 @@ const valeur = ref(0)
 
 <template>
   {{ valeur }}
-  <MyButton :title="'Reset'" @click = "valeur = 0"></MyButton>
+  <!-- <MyButton :title="'Reset'" @click = "valeur = 0"></MyButton> -->
+  <MyButton @click = "valeur = 0">Reset</MyButton>
+
   <!-- <MyButton class="my-button-red" :title="'Bouton 1'" @btnClick="onButtonClick('Bouton 1')"></MyButton>
   <MyButton :title="'Chill Kévin'" @btnClick="onButtonClick('Faut sleep la nuit')"></MyButton>
   <MyButton :title="'Ca groove ?'" @btnClick="onButtonClick('Yknow man')"></MyButton> -->
