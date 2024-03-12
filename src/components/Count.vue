@@ -22,6 +22,11 @@ watch(valeur,function(newValeur){
         <!-- <MyButton :title="'+'" @click ="valeur++"/> -->
         <MyButton @click ="valeur++">+</MyButton>
         {{ valeur }}
+
+        <!-- Pas compris le slot -------- -->
+        <!-- <slot name ="compteur" :valeur="valeur" {{ valeur }}></slot> -->
+        <!-- ---------------------------- -->
+        
         <!-- <MyButton :title="'-'" @click ="valeur--"/> -->
         <MyButton @click ="valeur--">-</MyButton>
     </div>
