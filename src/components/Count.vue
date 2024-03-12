@@ -1,9 +1,14 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, watch } from 'vue';
 import MyButton from './MyButton.vue';
 
-const valeur = ref(0)
+//const valeur = ref(0)
+const valeur = defineModel()
+const emits = defineEmits(["countUpdate"])
 
+watch(valeur,function(newValeur){
+    emits("countUpdate", newValeur)
+})
 // function increment(){
 //     valeur.value ++;
 // }
